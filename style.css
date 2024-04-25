@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: monospace; 
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.pannel{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.p-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 30%;
+    height: 100px;
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.boxes{
+    display: flex;
+    /* width: 30%; */
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.box{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.p-bottom{
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    
+   
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: darkolivegreen;
+}
+
+header{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+
+footer{
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .p-top {
+        padding: 0 10%;
+    }
+    
+    .boxes {
+        gap: 10px;
+    }
+    
+    .box {
+        font-size: 20px;
+    }
+    
+    .p-bottom {
+        padding: 10px;
+    }
+    
+    .bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
